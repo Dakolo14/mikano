@@ -189,12 +189,19 @@ button {
   display: block;
 }
 
+.hero-slide picture,
 .hero-slide img,
 .hero-slide .img-placeholder--hero {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.hero-slide picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel-btn {
@@ -305,6 +312,13 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.category-card picture {
+  display: block;
+  width: 100%;
+  height: 220px;
+  background: var(--white);
 }
 
 .category-card img {
@@ -844,6 +858,14 @@ button {
   justify-content: center;
   padding: 12px;
   box-sizing: border-box;
+}
+
+.model-card-image picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .model-card-image img {
@@ -1426,12 +1448,23 @@ button {
   inset: 0;
 }
 
+.hub-tile-media picture,
 .hub-tile-media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: grayscale(20%) brightness(0.82);
   transition: filter 0.45s ease;
+}
+
+.hub-tile-media picture {
+  display: block;
+}
+
+.hub-tile-media picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hub-tile-overlay {
@@ -1442,7 +1475,9 @@ button {
 }
 
 .hub-tile:hover .hub-tile-media img,
-.hub-tile:focus-visible .hub-tile-media img {
+.hub-tile:focus-visible .hub-tile-media img,
+.hub-tile:hover .hub-tile-media picture img,
+.hub-tile:focus-visible .hub-tile-media picture img {
   filter: grayscale(0%) brightness(1);
 }
 

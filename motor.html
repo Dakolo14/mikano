@@ -9,13 +9,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/eado.webp" type="image/webp">
 </head>
 <body>
 
   <!-- Mikano Header (Konga header excluded) -->
   <header class="site-header">
     <a href="index.html" class="logo">
-      <img src="assets/mikano-logo.png" alt="Mikano International Limited">
+      <picture>
+        <source srcset="assets/mikano-logo.webp" type="image/webp">
+        <img src="assets/mikano-logo.png" alt="Mikano International Limited" decoding="async">
+      </picture>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       <a href="power.html">Power Systems</a>
@@ -40,22 +44,22 @@
   <section class="hero-carousel-wrap" aria-label="Featured promotions">
     <div class="hero-carousel">
       <div class="hero-slide active">
-        <img
-          src="assets/eado.png"
-          alt="Mikano Motors promotion 1"
-        >
+        <picture>
+          <source srcset="assets/eado.webp" type="image/webp">
+          <img alt="Mikano Motors promotion 1" src="assets/eado.png" loading="eager" decoding="async" fetchpriority="high">
+        </picture>
       </div>
       <div class="hero-slide">
-        <img
-          src="assets/eado.png"
-          alt="Mikano Power Systems promotion 2"
-        >
+        <picture>
+          <source srcset="assets/eado.webp" type="image/webp">
+          <img alt="Mikano Power Systems promotion 2" src="assets/eado.png" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="hero-slide">
-        <img
-          src="assets/eado.png"
-          alt="Mikano Automobile promotion 3"
-        >
+        <picture>
+          <source srcset="assets/eado.webp" type="image/webp">
+          <img alt="Mikano Automobile promotion 3" src="assets/eado.png" loading="lazy" decoding="async">
+        </picture>
       </div>
 
       <button class="carousel-btn prev" aria-label="Previous slide">
@@ -87,10 +91,10 @@
 
     <div class="card-grid">
       <article class="category-card">
-        <img
-          src="assets/executivesuv.png"
-          alt="Executive SUV"
-        >
+        <picture>
+          <source srcset="assets/executivesuv.webp" type="image/webp">
+          <img alt="Executive SUV" src="assets/executivesuv.png" loading="lazy" decoding="async">
+        </picture>
         <div class="category-card-body">
           <h3>EXECUTIVE SUVs</h3>
           <p>
@@ -105,10 +109,10 @@
       </article>
 
       <article class="category-card">
-        <img
-          src="assets/commercial.png"
-          alt="Commercial pickup truck"
-        >
+        <picture>
+          <source srcset="assets/commercial.webp" type="image/webp">
+          <img alt="Commercial pickup truck" src="assets/commercial.png" loading="lazy" decoding="async">
+        </picture>
         <div class="category-card-body">
           <h3>COMMERCIAL FLEETS</h3>
           <p>
@@ -123,10 +127,10 @@
       </article>
 
       <article class="category-card">
-        <img
-          src="assets/leisure.png"
-          alt="Urban leisure SUV"
-        >
+        <picture>
+          <source srcset="assets/leisure.webp" type="image/webp">
+          <img alt="Urban leisure SUV" src="assets/leisure.png" loading="lazy" decoding="async">
+        </picture>
         <div class="category-card-body">
           <h3>URBAN &amp; LEISURE</h3>
           <p>
@@ -205,7 +209,7 @@
         <div class="best-sellers-track">
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/changan/unikbrand.png" alt="Mikano Changan UNI-K">
+              <picture><source srcset="assets/brands/changan/unikbrand.webp" type="image/webp"><img src="assets/brands/changan/unikbrand.png" alt="Mikano Changan UNI-K" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO CHANGAN UNI-K</h3>
@@ -222,7 +226,7 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/changan/eadoelite.png" alt="Mikano Changan Eado Elite">
+              <picture><source srcset="assets/brands/changan/eadoelite.webp" type="image/webp"><img src="assets/brands/changan/eadoelite.png" alt="Mikano Changan Eado Elite" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO CHANGAN EADO ELITE</h3>
@@ -239,7 +243,7 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/changan/cs55pro.png" alt="Mikano Changan CS55 Pro">
+              <picture><source srcset="assets/brands/changan/cs55pro.webp" type="image/webp"><img src="assets/brands/changan/cs55pro.png" alt="Mikano Changan CS55 Pro" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO CHANGAN CS55 PRO</h3>
@@ -256,7 +260,7 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/changan/cs95.png" alt="Mikano Changan CS95 Plus">
+              <picture><source srcset="assets/brands/changan/cs95.webp" type="image/webp"><img src="assets/brands/changan/cs95.png" alt="Mikano Changan CS95 Plus" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO CHANGAN CS95 PLUS</h3>
@@ -273,7 +277,7 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/maxus/t60.png" alt="Mikano Maxus T60">
+              <picture><source srcset="assets/brands/maxus/t60.webp" type="image/webp"><img src="assets/brands/maxus/t60.png" alt="Mikano Maxus T60" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO MAXUS T60</h3>
@@ -290,7 +294,7 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/maxus/t90.png" alt="Mikano Maxus T90">
+              <picture><source srcset="assets/brands/maxus/t90.webp" type="image/webp"><img src="assets/brands/maxus/t90.png" alt="Mikano Maxus T90" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO MAXUS T90</h3>
@@ -307,7 +311,7 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/deepal/s07.png" alt="Mikano Deepal S07">
+              <picture><source srcset="assets/brands/deepal/s07.webp" type="image/webp"><img src="assets/brands/deepal/s07.png" alt="Mikano Deepal S07" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO DEEPAL S07</h3>
@@ -324,7 +328,7 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <img src="assets/brands/changan/x7plus.png" alt="Mikano Changan X7 Plus">
+              <picture><source srcset="assets/brands/changan/x7plus.webp" type="image/webp"><img src="assets/brands/changan/x7plus.png" alt="Mikano Changan X7 Plus" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
               <h3 class="product-name">MIKANO CHANGAN X7 PLUS</h3>
@@ -375,51 +379,51 @@
           </button>
           <div class="brand-carousel-track">
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/cs15main.png" alt="CS15"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/cs15main.webp" type="image/webp"><img src="assets/brands/changan/cs15main.png" alt="CS15" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">CS15</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/eadoelite.png" alt="Eado Elite"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/eadoelite.webp" type="image/webp"><img src="assets/brands/changan/eadoelite.png" alt="Eado Elite" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">EADO ELITE</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/eadoplus.png" alt="Eado EV"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/eadoplus.webp" type="image/webp"><img src="assets/brands/changan/eadoplus.png" alt="Eado EV" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">EADO EV</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/cs55pro.png" alt="CS55 Pro"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/cs55pro.webp" type="image/webp"><img src="assets/brands/changan/cs55pro.png" alt="CS55 Pro" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">CS55 PRO</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/cs35.png" alt="CS35 Luxury"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/cs35.webp" type="image/webp"><img src="assets/brands/changan/cs35.png" alt="CS35 Luxury" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">CS35 LUXURY</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/cs55.png" alt="CS55 Luxury"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/cs55.webp" type="image/webp"><img src="assets/brands/changan/cs55.png" alt="CS55 Luxury" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">CS55 LUXURY</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/x7plus.png" alt="X7 Plus"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/x7plus.webp" type="image/webp"><img src="assets/brands/changan/x7plus.png" alt="X7 Plus" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">X7 PLUS</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/cs95.png" alt="CS95 Plus"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/cs95.webp" type="image/webp"><img src="assets/brands/changan/cs95.png" alt="CS95 Plus" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">CS95 PLUS</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/unikbrand.png" alt="UNI-K"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/unikbrand.webp" type="image/webp"><img src="assets/brands/changan/unikbrand.png" alt="UNI-K" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">UNI-K</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <!-- <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/uni-t.png" alt="UNI-T"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/uni-t.webp" type="image/webp"><img src="assets/brands/changan/uni-t.png" alt="UNI-T" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">UNI-T</h4><a href="#" class="model-card-link">View Details</a></div>
             </article> -->
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/unis.png" alt="UNI-S"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/unis.webp" type="image/webp"><img src="assets/brands/changan/unis.png" alt="UNI-S" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">UNI-S</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/changan/hunter.png" alt="Hunter"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/changan/hunter.webp" type="image/webp"><img src="assets/brands/changan/hunter.png" alt="Hunter" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">HUNTER</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
           </div>
@@ -450,15 +454,15 @@
           </button>
           <div class="brand-carousel-track">
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/maxus/d90.png" alt="D90"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/maxus/d90.webp" type="image/webp"><img src="assets/brands/maxus/d90.png" alt="D90" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">D90</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/maxus/t90.png" alt="T90"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/maxus/t90.webp" type="image/webp"><img src="assets/brands/maxus/t90.png" alt="T90" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">T90</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/maxus/t60.png" alt="T60"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/maxus/t60.webp" type="image/webp"><img src="assets/brands/maxus/t60.png" alt="T60" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">T60</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
           </div>
@@ -489,15 +493,15 @@
           </button>
           <div class="brand-carousel-track">
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/deepal/g318.png" alt="G318"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/deepal/g318.webp" type="image/webp"><img src="assets/brands/deepal/g318.png" alt="G318" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">G318</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/deepal/s07.png" alt="S07"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/deepal/s07.webp" type="image/webp"><img src="assets/brands/deepal/s07.png" alt="S07" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">S07</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
             <article class="model-card">
-              <div class="model-card-image"><img src="assets/brands/deepal/s05.png" alt="S05"></div>
+              <div class="model-card-image"><picture><source srcset="assets/brands/deepal/s05.webp" type="image/webp"><img src="assets/brands/deepal/s05.png" alt="S05" loading="lazy" decoding="async"></picture></div>
               <div class="model-card-body"><h4 class="model-card-name">S05</h4><a href="#" class="model-card-link">View Details</a></div>
             </article>
           </div>
@@ -517,24 +521,24 @@
       <div class="changan-carousel">
         <div class="changan-slide active" data-slide="0">
           <div class="changan-brand">
-            <img src="assets/changanlogo.png" alt="Changan" class="changan-brand-logo">
+            <picture><source srcset="assets/changanlogo.webp" type="image/webp"><img src="assets/changanlogo.png" alt="Changan" class="changan-brand-logo" loading="lazy" decoding="async"></picture>
             <p class="changan-tagline">Driving forward with You.</p>
           </div>
-          <img src="assets/changancar.png" alt="Changan UNI-K side profile" class="changan-vehicle-img">
+          <picture><source srcset="assets/changancar.webp" type="image/webp"><img src="assets/changancar.png" alt="Changan UNI-K side profile" class="changan-vehicle-img" loading="lazy" decoding="async"></picture>
         </div>
         <div class="changan-slide" data-slide="1">
           <div class="changan-brand">
-            <img src="assets/deepallogo.png" alt="Deepal" class="changan-brand-logo">
+            <picture><source srcset="assets/deepallogo.webp" type="image/webp"><img src="assets/deepallogo.png" alt="Deepal" class="changan-brand-logo" loading="lazy" decoding="async"></picture>
             <p class="changan-tagline">Explore the power of innovation.</p>
           </div>
-          <img src="assets/deepalcar.png" alt="Deepal Eado side profile" class="changan-vehicle-img">
+          <picture><source srcset="assets/deepalcar.webp" type="image/webp"><img src="assets/deepalcar.png" alt="Deepal Eado side profile" class="changan-vehicle-img" loading="lazy" decoding="async"></picture>
         </div>
         <div class="changan-slide" data-slide="2">
           <div class="changan-brand">
-            <img src="assets/maxuslogo.png" alt="Maxus" class="changan-brand-logo">
+            <picture><source srcset="assets/maxuslogo.webp" type="image/webp"><img src="assets/maxuslogo.png" alt="Maxus" class="changan-brand-logo" loading="lazy" decoding="async"></picture>
             <p class="changan-tagline">Your trusted commercial partner.</p>
           </div>
-          <img src="assets/maxuscar.png" alt="Maxus T60 side profile" class="changan-vehicle-img">
+          <picture><source srcset="assets/maxuscar.webp" type="image/webp"><img src="assets/maxuscar.png" alt="Maxus T60 side profile" class="changan-vehicle-img" loading="lazy" decoding="async"></picture>
         </div>
       </div>
 
@@ -738,10 +742,10 @@
         const gallery = brandGalleries[changanCurrent];
         document.getElementById("changan-modal-title").textContent = gallery.title;
         modalGallery.innerHTML = gallery.images
-          .map(
-            (src) =>
-              `<figure class="image-modal-item"><img src="${src}" alt="${gallery.title} image"></figure>`
-          )
+          .map((src) => {
+            const webp = src.replace(".png", ".webp");
+            return `<figure class="image-modal-item"><picture><source srcset="${webp}" type="image/webp"><img src="${src}" alt="${gallery.title} image" loading="lazy" decoding="async"></picture></figure>`;
+          })
           .join("");
         modal.showModal();
       }

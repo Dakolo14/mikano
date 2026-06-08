@@ -9,12 +9,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/motorbg.webp" type="image/webp">
 </head>
 <body class="page-hub">
 
   <header class="site-header">
     <a href="index.html" class="logo">
-      <img src="assets/mikano-logo.png" alt="Mikano International Limited">
+      <picture>
+        <source srcset="assets/mikano-logo.webp" type="image/webp">
+        <img src="assets/mikano-logo.png" alt="Mikano International Limited" decoding="async">
+      </picture>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       <a href="power.html">Power Systems</a>
@@ -27,7 +31,10 @@
     <div class="hub-grid">
       <a href="motor.html" class="hub-tile hub-tile--motors">
         <div class="hub-tile-media">
-          <img src="assets/motorbg.png" alt="">
+          <picture>
+            <source srcset="assets/motorbg.webp" type="image/webp">
+            <img src="assets/motorbg.png" alt="" fetchpriority="high" decoding="async">
+          </picture>
           <span class="hub-tile-overlay" aria-hidden="true"></span>
         </div>
         <div class="hub-tile-content">
@@ -38,7 +45,10 @@
 
       <a href="power.html" class="hub-tile hub-tile--power">
         <div class="hub-tile-media">
-          <img src="assets/industrial.png" alt="">
+          <picture>
+            <source srcset="assets/industrial.webp" type="image/webp">
+            <img src="assets/industrial.png" alt="" loading="lazy" decoding="async">
+          </picture>
           <span class="hub-tile-overlay" aria-hidden="true"></span>
         </div>
         <div class="hub-tile-content">
