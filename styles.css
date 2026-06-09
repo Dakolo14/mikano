@@ -1426,7 +1426,7 @@ button {
 
 .hub-tile {
   position: relative;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 1 / 1;
   border-radius: 12px;
   overflow: hidden;
   display: block;
