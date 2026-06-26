@@ -928,6 +928,8 @@ button {
 .changan-brand picture img.changan-brand-logo {
   height: 64px;
   width: auto;
+  max-width: 240px;
+  object-fit: contain;
   margin: 0 auto 8px;
   display: block;
 }
@@ -935,6 +937,8 @@ button {
 .changan-brand-logo {
   height: 64px;
   width: auto;
+  max-width: 240px;
+  object-fit: contain;
   margin: 0 auto 8px;
 }
 

@@ -27,7 +27,7 @@ BRANDS = [
         "desc": "Mikano-built generator sets for homes, business and industry.",
         "tagline": "The art of power — built by Mikano.",
         "slider_product": "sp-250",
-        "slider_logo_file": ("assets/yorclogo", "jpeg"),
+        "slider_logo_file": ("assets/yorclogo", "png"),
         "models": [
             ("sp-20", "SP 20"),
             ("sp-50", "SP 50"),
