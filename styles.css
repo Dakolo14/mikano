@@ -942,6 +942,11 @@ button {
   margin: 0 auto 8px;
 }
 
+.changan-brand-logo--yorc {
+  height: 56px;
+  max-width: 215px;
+}
+
 .changan-tagline {
   font-size: var(--text-content);
   font-weight: 400;
@@ -1406,6 +1411,11 @@ button {
 
   .changan-brand-logo {
     height: 48px;
+  }
+
+  .changan-brand-logo--yorc {
+    height: 42px;
+    max-width: 180px;
   }
 
   .changan-carousel {
