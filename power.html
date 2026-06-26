@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/generators/hero/01.webp" type="image/webp">
 </head>
 <body>
 
@@ -30,7 +31,7 @@
   <div class="announcement-wrap">
     <input type="checkbox" id="announcement-dismiss" class="announcement-toggle">
     <div class="announcement-bar" role="region" aria-label="Special deals and announcements">
-      <span class="announcement-text">SHOP MIKANO GENERATORS NOW — RESIDENTIAL &amp; ENTERPRISE SOLUTIONS AVAILABLE</span>
+      <span class="announcement-text">SHOP MIKANO GENERATORS NOW — PERKINS, YORC &amp; MTU LINE-UPS AVAILABLE</span>
       <label for="announcement-dismiss" class="announcement-close" aria-label="Dismiss announcement">
         <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
           <path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
@@ -43,13 +44,22 @@
   <section class="hero-carousel-wrap" aria-label="Featured promotions">
     <div class="hero-carousel">
       <div class="hero-slide active">
-        <div class="img-placeholder img-placeholder--hero">Hero Banner 1</div>
+        <picture>
+          <source srcset="assets/generators/hero/01.webp" type="image/webp">
+          <img src="assets/generators/hero/01.png" alt="Mikano generator promotion" fetchpriority="high" loading="eager" decoding="async">
+        </picture>
       </div>
       <div class="hero-slide">
-        <div class="img-placeholder img-placeholder--hero">Hero Banner 2</div>
+        <picture>
+          <source srcset="assets/generators/hero/01.webp" type="image/webp">
+          <img src="assets/generators/hero/01.png" alt="Mikano generator promotion" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="hero-slide">
-        <div class="img-placeholder img-placeholder--hero">Hero Banner 3</div>
+        <picture>
+          <source srcset="assets/generators/hero/01.webp" type="image/webp">
+          <img src="assets/generators/hero/01.png" alt="Mikano generator promotion" loading="lazy" decoding="async">
+        </picture>
       </div>
 
       <button class="carousel-btn prev" aria-label="Previous slide">
@@ -82,8 +92,8 @@
     <div class="card-grid">
       <article class="category-card">
         <picture>
-          <source srcset="assets/residential.webp" type="image/webp">
-          <img alt="Residential generator system" src="assets/residential.png" loading="lazy" decoding="async">
+          <source srcset="assets/generators/yorc/sp-50/01.webp" type="image/webp">
+          <img alt="Yorc SP 50 residential generator" src="assets/generators/yorc/sp-50/01.png" loading="lazy" decoding="async">
         </picture>
         <div class="category-card-body">
           <h3>RESIDENTIAL SYSTEMS</h3>
@@ -100,8 +110,8 @@
 
       <article class="category-card">
         <picture>
-          <source srcset="assets/enterprise.webp" type="image/webp">
-          <img alt="Enterprise-grade power systems" src="assets/enterprise.png" loading="lazy" decoding="async">
+          <source srcset="assets/generators/perkins/sp-100/01.webp" type="image/webp">
+          <img alt="Perkins SP 100 enterprise generator" src="assets/generators/perkins/sp-100/01.png" loading="lazy" decoding="async">
         </picture>
         <div class="category-card-body">
           <h3>ENTERPRISE-GRADE</h3>
@@ -118,8 +128,8 @@
 
       <article class="category-card">
         <picture>
-          <source srcset="assets/industrial.webp" type="image/webp">
-          <img alt="Industrial power infrastructure" src="assets/industrial.png" loading="lazy" decoding="async">
+          <source srcset="assets/generators/mtu/mtu-gas-2500-kva/01.webp" type="image/webp">
+          <img alt="MTU Gas 2500 kVA industrial generator" src="assets/generators/mtu/mtu-gas-2500-kva/01.png" loading="lazy" decoding="async">
         </picture>
         <div class="category-card-body">
           <h3>INDUSTRIAL INFRASTRUCTURE</h3>
@@ -171,20 +181,8 @@
         <a href="#" class="flash-more">
           See more
           <span class="icon-circle">
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M9 18L15 12L9 6"
-                stroke="#000000"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </span>
         </a>
@@ -199,115 +197,13 @@
         <div class="best-sellers-track">
           <article class="product-card">
             <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
+              <picture><source srcset="assets/generators/yorc/sp-50/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-50/01.png" alt="MIKANO YORC SP 50" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
-              <h3 class="product-name">MIKANO RESIDENTIAL GEN 5KVA</h3>
+              <h3 class="product-name">MIKANO YORC SP 50</h3>
               <p class="product-price">
                 <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;850,000</strong>
-              </p>
-              <div class="product-rating" aria-label="4 out of 5 stars">
-                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-              </div>
-              <p class="review-count">(8 Reviews)</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
-            </div>
-            <div class="product-card-body">
-              <h3 class="product-name">MIKANO RESIDENTIAL GEN 10KVA</h3>
-              <p class="product-price">
-                <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;1,450,000</strong>
-              </p>
-              <div class="product-rating" aria-label="4 out of 5 stars">
-                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-              </div>
-              <p class="review-count">(12 Reviews)</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
-            </div>
-            <div class="product-card-body">
-              <h3 class="product-name">MIKANO ENTERPRISE GEN 50KVA</h3>
-              <p class="product-price">
-                <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;8,500,000</strong>
-              </p>
-              <div class="product-rating" aria-label="4 out of 5 stars">
-                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-              </div>
-              <p class="review-count">(6 Reviews)</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
-            </div>
-            <div class="product-card-body">
-              <h3 class="product-name">MIKANO ENTERPRISE GEN 100KVA</h3>
-              <p class="product-price">
-                <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;15,000,000</strong>
-              </p>
-              <div class="product-rating" aria-label="4 out of 5 stars">
-                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-              </div>
-              <p class="review-count">(5 Reviews)</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
-            </div>
-            <div class="product-card-body">
-              <h3 class="product-name">MIKANO INDUSTRIAL GEN 250KVA</h3>
-              <p class="product-price">
-                <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;32,000,000</strong>
-              </p>
-              <div class="product-rating" aria-label="3 out of 5 stars">
-                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-              </div>
-              <p class="review-count">(4 Reviews)</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
-            </div>
-            <div class="product-card-body">
-              <h3 class="product-name">MIKANO INDUSTRIAL GEN 500KVA</h3>
-              <p class="product-price">
-                <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;58,000,000</strong>
-              </p>
-              <div class="product-rating" aria-label="4 out of 5 stars">
-                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
-              </div>
-              <p class="review-count">(3 Reviews)</p>
-            </div>
-          </article>
-
-          <article class="product-card">
-            <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
-            </div>
-            <div class="product-card-body">
-              <h3 class="product-name">MIKANO SILENT GEN 15KVA</h3>
-              <p class="product-price">
-                <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;2,200,000</strong>
+                <strong class="product-price-amount">&#8358;2,500,000</strong>
               </p>
               <div class="product-rating" aria-label="4 out of 5 stars">
                 <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
@@ -318,13 +214,81 @@
 
           <article class="product-card">
             <div class="product-card-image">
-              <div class="img-placeholder">Product</div>
+              <picture><source srcset="assets/generators/perkins/sp-30/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-30/01.png" alt="MIKANO PERKINS SP 30" loading="lazy" decoding="async"></picture>
             </div>
             <div class="product-card-body">
-              <h3 class="product-name">MIKANO DIESEL GEN 30KVA</h3>
+              <h3 class="product-name">MIKANO PERKINS SP 30</h3>
               <p class="product-price">
                 <span class="product-price-label">Starting from</span>
-                <strong class="product-price-amount">&#8358;4,800,000</strong>
+                <strong class="product-price-amount">&#8358;1,800,000</strong>
+              </p>
+              <div class="product-rating" aria-label="4 out of 5 stars">
+                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              </div>
+              <p class="review-count">(11 Reviews)</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-image">
+              <picture><source srcset="assets/generators/perkins/sp-100/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-100/01.png" alt="MIKANO PERKINS SP 100" loading="lazy" decoding="async"></picture>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">MIKANO PERKINS SP 100</h3>
+              <p class="product-price">
+                <span class="product-price-label">Starting from</span>
+                <strong class="product-price-amount">&#8358;4,500,000</strong>
+              </p>
+              <div class="product-rating" aria-label="4 out of 5 stars">
+                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              </div>
+              <p class="review-count">(14 Reviews)</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-image">
+              <picture><source srcset="assets/generators/yorc/sp-150/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-150/01.png" alt="MIKANO YORC SP 150" loading="lazy" decoding="async"></picture>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">MIKANO YORC SP 150</h3>
+              <p class="product-price">
+                <span class="product-price-label">Starting from</span>
+                <strong class="product-price-amount">&#8358;6,500,000</strong>
+              </p>
+              <div class="product-rating" aria-label="4 out of 5 stars">
+                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              </div>
+              <p class="review-count">(8 Reviews)</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-image">
+              <picture><source srcset="assets/generators/yorc/sp-250/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-250/01.png" alt="MIKANO YORC SP 250" loading="lazy" decoding="async"></picture>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">MIKANO YORC SP 250</h3>
+              <p class="product-price">
+                <span class="product-price-label">Starting from</span>
+                <strong class="product-price-amount">&#8358;12,000,000</strong>
+              </p>
+              <div class="product-rating" aria-label="4 out of 5 stars">
+                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              </div>
+              <p class="review-count">(10 Reviews)</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-image">
+              <picture><source srcset="assets/generators/perkins/sp-300/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-300/01.png" alt="MIKANO PERKINS SP 300" loading="lazy" decoding="async"></picture>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">MIKANO PERKINS SP 300</h3>
+              <p class="product-price">
+                <span class="product-price-label">Starting from</span>
+                <strong class="product-price-amount">&#8358;15,000,000</strong>
               </p>
               <div class="product-rating" aria-label="4 out of 5 stars">
                 <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
@@ -332,6 +296,41 @@
               <p class="review-count">(7 Reviews)</p>
             </div>
           </article>
+
+          <article class="product-card">
+            <div class="product-card-image">
+              <picture><source srcset="assets/generators/yorc/sp-400/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-400/01.png" alt="MIKANO YORC SP 400" loading="lazy" decoding="async"></picture>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">MIKANO YORC SP 400</h3>
+              <p class="product-price">
+                <span class="product-price-label">Starting from</span>
+                <strong class="product-price-amount">&#8358;22,000,000</strong>
+              </p>
+              <div class="product-rating" aria-label="4 out of 5 stars">
+                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              </div>
+              <p class="review-count">(6 Reviews)</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card-image">
+              <picture><source srcset="assets/generators/mtu/mtu-gas-2500-kva/01.webp" type="image/webp"><img src="assets/generators/mtu/mtu-gas-2500-kva/01.png" alt="MIKANO MTU GAS 2500 kVA" loading="lazy" decoding="async"></picture>
+            </div>
+            <div class="product-card-body">
+              <h3 class="product-name">MIKANO MTU GAS 2500 kVA</h3>
+              <p class="product-price">
+                <span class="product-price-label">Starting from</span>
+                <strong class="product-price-amount">&#8358;180,000,000</strong>
+              </p>
+              <div class="product-rating" aria-label="5 out of 5 stars">
+                <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              </div>
+              <p class="review-count">(4 Reviews)</p>
+            </div>
+          </article>
+
         </div>
         <button type="button" class="best-sellers-carousel-btn next" aria-label="Next products">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -342,30 +341,173 @@
     </div>
   </section>
 
-  <!-- Power Slider -->
+  <!-- Shop By Brand -->
+  <section class="shop-brands-section">
+    <h2 class="section-title">SHOP BY BRAND</h2>
+    <p class="section-desc">
+      Three world-class brands, one showroom. Explore each generator line-up.
+    </p>
+
+    <div class="shop-brands-list">
+      <!-- Perkins -->
+      <div class="brand-row">
+        <div class="brand-panel">
+          <div class="brand-panel-inner">
+            <h3 class="brand-panel-name">PERKINS</h3>
+            <p class="brand-panel-desc">
+              Diesel generator sets powered by world-renowned Perkins engines.
+            </p>
+            <span class="brand-panel-count">5 MODELS AVAILABLE</span>
+          </div>
+        </div>
+        <div class="brand-carousel" data-carousel="perkins">
+          <button type="button" class="brand-carousel-btn prev" aria-label="Previous Perkins models">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="brand-carousel-track">
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/perkins/sp-20/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-20/01.png" alt="SP 20" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 20</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/perkins/sp-30/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-30/01.png" alt="SP 30" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 30</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/perkins/sp-30-second-type/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-30-second-type/01.png" alt="SP 30 II" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 30 II</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/perkins/sp-100/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-100/01.png" alt="SP 100" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 100</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/perkins/sp-300/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-300/01.png" alt="SP 300" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 300</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+          </div>
+          <button type="button" class="brand-carousel-btn next" aria-label="Next Perkins models">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Yorc -->
+      <div class="brand-row">
+        <div class="brand-panel">
+          <div class="brand-panel-inner">
+            <h3 class="brand-panel-name">YORC</h3>
+            <p class="brand-panel-desc">
+              Mikano-built generator sets for homes, business and industry.
+            </p>
+            <span class="brand-panel-count">7 MODELS AVAILABLE</span>
+          </div>
+        </div>
+        <div class="brand-carousel" data-carousel="yorc">
+          <button type="button" class="brand-carousel-btn prev" aria-label="Previous Yorc models">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="brand-carousel-track">
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/yorc/sp-20/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-20/01.png" alt="SP 20" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 20</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/yorc/sp-50/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-50/01.png" alt="SP 50" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 50</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/yorc/sp-135/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-135/01.png" alt="SP 135" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 135</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/yorc/sp-150/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-150/01.png" alt="SP 150" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 150</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/yorc/sp-250/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-250/01.png" alt="SP 250" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 250</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/yorc/yorc-350-kva/01.webp" type="image/webp"><img src="assets/generators/yorc/yorc-350-kva/01.png" alt="YORC 350 kVA" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">YORC 350 kVA</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/yorc/sp-400/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-400/01.png" alt="SP 400" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">SP 400</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+          </div>
+          <button type="button" class="brand-carousel-btn next" aria-label="Next Yorc models">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- MTU -->
+      <div class="brand-row">
+        <div class="brand-panel">
+          <div class="brand-panel-inner">
+            <h3 class="brand-panel-name">MTU</h3>
+            <p class="brand-panel-desc">
+              Industrial gas generation for mission-critical infrastructure.
+            </p>
+            <span class="brand-panel-count">1 MODEL AVAILABLE</span>
+          </div>
+        </div>
+        <div class="brand-carousel" data-carousel="mtu">
+          <button type="button" class="brand-carousel-btn prev" aria-label="Previous MTU models">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="brand-carousel-track">
+            <article class="model-card">
+              <div class="model-card-image"><picture><source srcset="assets/generators/mtu/mtu-gas-2500-kva/01.webp" type="image/webp"><img src="assets/generators/mtu/mtu-gas-2500-kva/01.png" alt="MTU Gas 2500 kVA" loading="lazy" decoding="async"></picture></div>
+              <div class="model-card-body"><h4 class="model-card-name">MTU GAS 2500 kVA</h4><a href="#" class="model-card-link">View Details</a></div>
+            </article>
+          </div>
+          <button type="button" class="brand-carousel-btn next" aria-label="Next MTU models">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Power Brand Slider -->
   <section class="changan-section">
     <div class="changan-slider">
       <div class="changan-carousel">
         <div class="changan-slide active" data-slide="0">
           <div class="changan-brand">
-            <div class="img-placeholder img-placeholder--slider-logo">Logo</div>
-            <p class="changan-tagline">Reliable backup power for your home.</p>
+            <picture><source srcset="assets/perkinslogo.webp" type="image/webp"><img src="assets/perkinslogo.png" alt="Perkins" class="changan-brand-logo" loading="lazy" decoding="async"></picture>
+            <p class="changan-tagline">Trusted diesel power for every application.</p>
           </div>
-          <div class="img-placeholder img-placeholder--slider-product">Residential System</div>
+          <picture><source srcset="assets/generators/perkins/sp-100/01.webp" type="image/webp"><img src="assets/generators/perkins/sp-100/01.png" alt="PERKINS generator" class="changan-vehicle-img" loading="lazy" decoding="async"></picture>
         </div>
         <div class="changan-slide" data-slide="1">
           <div class="changan-brand">
-            <div class="img-placeholder img-placeholder--slider-logo">Logo</div>
-            <p class="changan-tagline">Power solutions built for business.</p>
+            <picture><source srcset="assets/yorclogo.webp" type="image/webp"><img src="assets/yorclogo.jpeg" alt="Yorc" class="changan-brand-logo" loading="lazy" decoding="async"></picture>
+            <p class="changan-tagline">The art of power — built by Mikano.</p>
           </div>
-          <div class="img-placeholder img-placeholder--slider-product">Enterprise System</div>
+          <picture><source srcset="assets/generators/yorc/sp-250/01.webp" type="image/webp"><img src="assets/generators/yorc/sp-250/01.png" alt="YORC generator" class="changan-vehicle-img" loading="lazy" decoding="async"></picture>
         </div>
         <div class="changan-slide" data-slide="2">
           <div class="changan-brand">
-            <div class="img-placeholder img-placeholder--slider-logo">Logo</div>
-            <p class="changan-tagline">Infrastructure-grade generation.</p>
+            <picture><source srcset="assets/mtulogo.webp" type="image/webp"><img src="assets/mtulogo.png" alt="MTU" class="changan-brand-logo" loading="lazy" decoding="async"></picture>
+            <p class="changan-tagline">Infrastructure-grade power at scale.</p>
           </div>
-          <div class="img-placeholder img-placeholder--slider-product">Industrial System</div>
+          <picture><source srcset="assets/generators/mtu/mtu-gas-2500-kva/01.webp" type="image/webp"><img src="assets/generators/mtu/mtu-gas-2500-kva/01.png" alt="MTU generator" class="changan-vehicle-img" loading="lazy" decoding="async"></picture>
         </div>
       </div>
 
@@ -373,7 +515,7 @@
         View Images
       </button>
 
-      <div class="changan-dots" role="tablist" aria-label="Power systems carousel">
+      <div class="changan-dots" role="tablist" aria-label="Generator brands carousel">
         <button class="dot active" aria-label="Slide 1" data-dot="0"></button>
         <button class="dot" aria-label="Slide 2" data-dot="1"></button>
         <button class="dot" aria-label="Slide 3" data-dot="2"></button>
@@ -516,6 +658,24 @@
       }
     })();
 
+
+    (function () {
+      document.querySelectorAll(".brand-carousel").forEach((carousel) => {
+        const track = carousel.querySelector(".brand-carousel-track");
+        const prevBtn = carousel.querySelector(".brand-carousel-btn.prev");
+        const nextBtn = carousel.querySelector(".brand-carousel-btn.next");
+        const scrollAmount = 236;
+
+        prevBtn.addEventListener("click", () => {
+          track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+        });
+
+        nextBtn.addEventListener("click", () => {
+          track.scrollBy({ left: scrollAmount, behavior: "smooth" });
+        });
+      });
+    })();
+
     (function () {
       const powerSlides = document.querySelectorAll(".changan-slide");
       const powerDots = document.querySelectorAll(".changan-dots .dot");
@@ -527,18 +687,108 @@
 
       const powerGalleries = [
         {
-          title: "Residential Gallery",
-          items: ["Residential Image 1", "Residential Image 2", "Residential Image 3"],
+                "title": "PERKINS Gallery",
+                "images": [
+                        "assets/generators/perkins/perkins-engine/01.png",
+                        "assets/generators/perkins/sp-100/01.png",
+                        "assets/generators/perkins/sp-100/02.png",
+                        "assets/generators/perkins/sp-100/03.png",
+                        "assets/generators/perkins/sp-100/04.png",
+                        "assets/generators/perkins/sp-100/05.png",
+                        "assets/generators/perkins/sp-100/06.png",
+                        "assets/generators/perkins/sp-100/07.png",
+                        "assets/generators/perkins/sp-20/01.png",
+                        "assets/generators/perkins/sp-20/02.png",
+                        "assets/generators/perkins/sp-20/03.png",
+                        "assets/generators/perkins/sp-20/04.png",
+                        "assets/generators/perkins/sp-30/01.png",
+                        "assets/generators/perkins/sp-30/02.png",
+                        "assets/generators/perkins/sp-30/03.png",
+                        "assets/generators/perkins/sp-30/04.png",
+                        "assets/generators/perkins/sp-30/05.png",
+                        "assets/generators/perkins/sp-30/06.png",
+                        "assets/generators/perkins/sp-30-second-type/01.png",
+                        "assets/generators/perkins/sp-30-second-type/02.png",
+                        "assets/generators/perkins/sp-30-second-type/03.png",
+                        "assets/generators/perkins/sp-30-second-type/04.png",
+                        "assets/generators/perkins/sp-30-second-type/05.png",
+                        "assets/generators/perkins/sp-30-second-type/06.png",
+                        "assets/generators/perkins/sp-30-second-type/07.png",
+                        "assets/generators/perkins/sp-300/01.png",
+                        "assets/generators/perkins/sp-300/02.png",
+                        "assets/generators/perkins/sp-300/03.png",
+                        "assets/generators/perkins/sp-300/04.png",
+                        "assets/generators/perkins/sp-300/05.png"
+                ]
         },
         {
-          title: "Enterprise Gallery",
-          items: ["Enterprise Image 1", "Enterprise Image 2", "Enterprise Image 3"],
+                "title": "YORC Gallery",
+                "images": [
+                        "assets/generators/yorc/yorc-engine/01.png",
+                        "assets/generators/yorc/yorc-engine/02.png",
+                        "assets/generators/yorc/yorc-engine/03.png",
+                        "assets/generators/yorc/yorc-engine/04.png",
+                        "assets/generators/yorc/yorc-engine/05.png",
+                        "assets/generators/yorc/sp-50/01.png",
+                        "assets/generators/yorc/sp-50/02.png",
+                        "assets/generators/yorc/sp-50/03.png",
+                        "assets/generators/yorc/sp-50/04.png",
+                        "assets/generators/yorc/sp-50/05.png",
+                        "assets/generators/yorc/sp-50/06.png",
+                        "assets/generators/yorc/sp-50/07.png",
+                        "assets/generators/yorc/sp-50/08.png",
+                        "assets/generators/yorc/sp-50/09.png",
+                        "assets/generators/yorc/sp-135/01.png",
+                        "assets/generators/yorc/sp-135/02.png",
+                        "assets/generators/yorc/sp-135/03.png",
+                        "assets/generators/yorc/sp-135/04.png",
+                        "assets/generators/yorc/sp-135/05.png",
+                        "assets/generators/yorc/sp-135/06.png",
+                        "assets/generators/yorc/sp-135/07.png",
+                        "assets/generators/yorc/sp-135/08.png",
+                        "assets/generators/yorc/sp-150/01.png",
+                        "assets/generators/yorc/sp-150/02.png",
+                        "assets/generators/yorc/sp-150/03.png",
+                        "assets/generators/yorc/sp-150/04.png",
+                        "assets/generators/yorc/sp-20/01.png",
+                        "assets/generators/yorc/sp-20/02.png",
+                        "assets/generators/yorc/sp-20/03.png",
+                        "assets/generators/yorc/sp-20/04.png",
+                        "assets/generators/yorc/sp-20/05.png",
+                        "assets/generators/yorc/sp-20/06.png",
+                        "assets/generators/yorc/sp-20/07.png",
+                        "assets/generators/yorc/sp-250/01.png",
+                        "assets/generators/yorc/sp-250/02.png",
+                        "assets/generators/yorc/sp-250/03.png",
+                        "assets/generators/yorc/sp-250/04.png",
+                        "assets/generators/yorc/sp-250/05.png",
+                        "assets/generators/yorc/sp-250/06.png",
+                        "assets/generators/yorc/sp-250/07.png",
+                        "assets/generators/yorc/sp-250/08.png",
+                        "assets/generators/yorc/sp-250/09.png",
+                        "assets/generators/yorc/sp-250/10.png",
+                        "assets/generators/yorc/sp-250/11.png",
+                        "assets/generators/yorc/sp-400/01.png",
+                        "assets/generators/yorc/sp-400/02.png",
+                        "assets/generators/yorc/sp-400/03.png",
+                        "assets/generators/yorc/sp-400/04.png",
+                        "assets/generators/yorc/sp-400/05.png",
+                        "assets/generators/yorc/sp-400/06.png",
+                        "assets/generators/yorc/yorc-350-kva/01.png",
+                        "assets/generators/yorc/yorc-350-kva/02.png",
+                        "assets/generators/yorc/yorc-350-kva/03.png"
+                ]
         },
         {
-          title: "Industrial Gallery",
-          items: ["Industrial Image 1", "Industrial Image 2", "Industrial Image 3"],
-        },
-      ];
+                "title": "MTU Gallery",
+                "images": [
+                        "assets/generators/mtu/mtu-gas-2500-kva/01.png",
+                        "assets/generators/mtu/mtu-gas-2500-kva/02.png",
+                        "assets/generators/mtu/mtu-gas-2500-kva/03.png",
+                        "assets/generators/mtu/mtu-gas-2500-kva/04.png"
+                ]
+        }
+];
 
       function showPowerSlide(index) {
         powerCurrent = (index + powerSlides.length) % powerSlides.length;
@@ -555,11 +805,11 @@
       function openGallery() {
         const gallery = powerGalleries[powerCurrent];
         document.getElementById("power-modal-title").textContent = gallery.title;
-        modalGallery.innerHTML = gallery.items
-          .map(
-            (label) =>
-              `<figure class="image-modal-item"><div class="img-placeholder img-placeholder--modal">${label}</div></figure>`
-          )
+        modalGallery.innerHTML = gallery.images
+          .map((src) => {
+            const webp = src.replace(".png", ".webp");
+            return `<figure class="image-modal-item"><picture><source srcset="${webp}" type="image/webp"><img src="${src}" alt="${gallery.title} image" loading="lazy" decoding="async"></picture></figure>`;
+          })
           .join("");
         modal.showModal();
       }

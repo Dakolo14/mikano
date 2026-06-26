@@ -921,6 +921,17 @@ button {
   margin-bottom: 24px;
 }
 
+.changan-brand picture {
+  display: block;
+}
+
+.changan-brand picture img.changan-brand-logo {
+  height: 64px;
+  width: auto;
+  margin: 0 auto 8px;
+  display: block;
+}
+
 .changan-brand-logo {
   height: 64px;
   width: auto;
@@ -947,7 +958,20 @@ button {
   display: block;
 }
 
+.changan-slide > picture {
+  display: block;
+}
+
 .changan-vehicle-img {
+  width: 100%;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.changan-slide > picture img.changan-vehicle-img {
   width: 100%;
   height: auto;
   max-height: 360px;
