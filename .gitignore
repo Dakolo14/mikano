@@ -3,3 +3,4 @@
 
 # Raw source uploads (processed copies live in assets/generators/)
 assets/Mikano Generators/
+.vercel
