@@ -811,24 +811,26 @@ button {
   margin-bottom: 12px;
 }
 
-.product-seller-info .seller-name {
-  color: #eb1577;
-  font-weight: 400;
+.seller-name {
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
 }
 
 .btn-add-to-cart {
-  width: 100%;
-  background: #eb1577;
-  color: var(--white);
-  border: none;
-  border-radius: 4px;
-  padding: 8px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.2s ease;
-  margin-top: auto;
+    width: 100%;
+    background: #eb1577;
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 0.800rem;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
 }
 
 .btn-add-to-cart:hover {
@@ -1058,7 +1060,7 @@ button {
 }
 
 .model-card-link::after {
-  content: " →";
+  content: " \2192";
 }
 
 .model-card-link:hover {
@@ -2520,10 +2522,10 @@ button {
 }
 
 .seller-name {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 2px;
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
 }
 
 .seller-years {

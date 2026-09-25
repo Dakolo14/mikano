@@ -1,0 +1,31 @@
+<USER_REQUEST>
+For this power page, I was the one that separated it to 2 html
+
+Both have different contents. 
+
+You went back in terms of the changes. Way to back
+
+The text decoration none to the parts i told you to add it to 
+
+Also the 2 carousels in motor and power page. 
+
+For power page, the 2 banners are 
+"[https://www-konga-com-res.cloudinary.com/image/upload/v1790347064/landingPages/2026%20Marketing/MikanoSIS/mikano-first.png](https://www-konga-com-res.cloudinary.com/image/upload/v1790347064/landingPages/2026%20Marketing/MikanoSIS/mikano-first.png)"
+
+"[https://www-konga-com-res.cloudinary.com/image/upload/v1790347064/landingPages/2026%20Marketing/MikanoSIS/mikano-second.png](https://www-konga-com-res.cloudinary.com/image/upload/v1790347064/landingPages/2026%20Marketing/MikanoSIS/mikano-second.png)"
+
+Both should not be clickable 
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-09-25T15:39:35+01:00.
+
+The user's current state is as follows:
+Active Document: /Users/ajosedakolo/Desktop/mikano/power.html (LANGUAGE_HTML)
+Cursor is on line: 6080
+Other open documents:
+- /Users/ajosedakolo/Desktop/mikano/power.html (LANGUAGE_HTML)
+- /Users/ajosedakolo/Desktop/mikano/motor.html (LANGUAGE_HTML)
+- /Users/ajosedakolo/Desktop/mikano/index.html (LANGUAGE_HTML)
+- /Users/ajosedakolo/Desktop/mikano/maxust90.html (LANGUAGE_HTML)
+No browser pages are currently open.
+</ADDITIONAL_METADATA>

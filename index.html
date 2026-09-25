@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mikano International Limited | Shop Motors &amp; Power on Konga</title>
-  <meta name="description" content="Welcome to Mikano on Konga. Choose Mikano Motors for Changan, Deepal and Maxus vehicles, or Mikano Power for generators and backup power systems in Nigeria.">
+  <title>Mikano Motors Official Store | Shop Changan & Maxus Vehicles on Konga</title>
+  <meta name="description" content="Discover the official Mikano Motors store on Konga. Shop the latest Changan SUVs, sedans, Deepal EVs, and Maxus pickups. Enjoy exclusive deals, nationwide delivery, and guaranteed after-sales support.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -85,6 +85,13 @@ button {
   margin-bottom: 20px;
 }
 
+@media (max-width: 640px) {
+    .logo {
+      display: inline-block;
+      margin-bottom: 4px !important;
+    }
+}
+
 .logo img {
   height: 72px;
   width: auto;
@@ -104,6 +111,8 @@ button {
 }
 
 .main-nav a {
+  color: var(--white) !important;
+  text-decoration: none !important;
   padding: 2px 6px;
   transition: color 0.2s;
 }
@@ -113,6 +122,7 @@ button {
 }
 
 .main-nav .divider {
+  color: var(--white) !important;
   display: inline;
   color: #555;
   user-select: none;
@@ -756,8 +766,9 @@ button {
 }
 
 .badge-discount {
-  background: #fbebeb;
-  color: #e53e3e;
+  background: #029063;
+  color: #ffffff;
+  border: 0.5px solid #ffffff;
   font-size: 10px;
   font-weight: 700;
   padding: 3px 6px;
@@ -821,24 +832,26 @@ button {
   margin-bottom: 12px;
 }
 
-.product-seller-info .seller-name {
-  color: #eb1577;
-  font-weight: 400;
+.seller-name {
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
 }
 
 .btn-add-to-cart {
-  width: 100%;
-  background: #eb1577;
-  color: var(--white);
-  border: none;
-  border-radius: 4px;
-  padding: 10px;
-  font-size: 0.8125rem;
-  font-weight: 700;
-  cursor: pointer;
-  text-align: center;
-  transition: background-color 0.2s ease;
-  margin-top: auto;
+    width: 100%;
+    background: #eb1577;
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 0.800rem;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s ease;
+    margin-top: auto;
 }
 
 .btn-add-to-cart:hover {
@@ -1068,7 +1081,7 @@ button {
 }
 
 .model-card-link::after {
-  content: " →";
+  content: " \2192";
 }
 
 .model-card-link:hover {
@@ -1610,12 +1623,13 @@ button {
   }
 }
 
-/* Hub landing — index.html */
+/* Hub landing &mdash; index.html */
 .page-hub {
   background: var(--dark);
 }
 
 .page-hub .site-header {
+  color: var(--white);
   background: var(--dark);
   padding-bottom: 24px;
 }
@@ -1633,6 +1647,7 @@ button {
 }
 
 .hub-tile {
+  text-decoration: none !important;
   position: relative;
   aspect-ratio: 1 / 1;
   border-radius: 12px;
@@ -1708,6 +1723,7 @@ button {
 }
 
 .hub-tile-title {
+  text-decoration: none !important;
   font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   font-weight: 600;
   color: var(--white);
@@ -1718,6 +1734,7 @@ button {
 }
 
 .hub-tile-btn {
+  text-decoration: none !important;
   display: inline-block;
   padding: 10px 28px;
   background: var(--white);
@@ -1731,6 +1748,7 @@ button {
 
 .hub-tile:hover .hub-tile-btn,
 .hub-tile:focus-visible .hub-tile-btn {
+  text-decoration: none !important;
   background: #ed017f;
   color: var(--white);
 }
@@ -2347,9 +2365,10 @@ button {
 }
 
 .bulk-phone {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #ed017f;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ed017f;
+    text-decoration: none;
 }
 
 .product-action-buttons {
@@ -2472,6 +2491,9 @@ button {
   color: #666;
   margin-bottom: 4px;
   line-height: 1.4;
+  text-align: left !important;
+  letter-spacing: normal !important;
+  word-spacing: normal !important;
 }
 
 .delivery-text p.delivery-subtext {
@@ -2530,10 +2552,10 @@ button {
 }
 
 .seller-name {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 2px;
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
 }
 
 .seller-years {
@@ -2671,7 +2693,27 @@ button {
   display: block;
 }
 
-  </style>
+  
+/* Overrides for text-decoration */
+.main-nav a,
+.model-card-link,
+.contact-btn {
+  text-decoration: none !important;
+}
+
+/* Margin for the end of the hub page */
+.hub-section {
+  margin-bottom: 80px !important;
+}
+
+/* Override for seller name */
+.seller-name {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    margin-bottom: 0.5px !important;
+}
+</style>
   <link rel="preload" as="image" href="https://www-konga-com-res.cloudinary.com/image/upload/v1790082714/landingPages/2026%20Marketing/MikanoSIS/motorbg.png">
 </head>
 <body class="page-hub">
